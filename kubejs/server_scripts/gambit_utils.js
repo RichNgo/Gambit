@@ -217,6 +217,16 @@ ServerEvents.commandRegistry(function(event) {
           announceNextMap(ctx.source.server, 5, 1, 'TDM', 'Mall', 'aqua', 'blue');
           return 1;
         }))
+      .then(Commands.literal('tdm_yuri')
+        .executes(function(ctx) {
+          announceNextMap(ctx.source.server, 6, 1, 'TDM', 'Yuri', 'aqua', 'blue');
+          return 1;
+        }))
+      .then(Commands.literal('tdm_forest')
+        .executes(function(ctx) {
+          announceNextMap(ctx.source.server, 7, 1, 'TDM', 'Forest TDM', 'aqua', 'blue');
+          return 1;
+        }))
   );
 
   event.register(
